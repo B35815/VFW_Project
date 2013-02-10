@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Ricardo Aviles -->
+<!-- Term 1302 -->
+<!-- VFW Project 1 -->
+<!-- 02/09/2013 -->
+
+<!-- HTML TAG -->
+<html>
+<!-- Document Head -->
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="My first HTML of Visual Frameworks class" />
+        <meta name="keywords" content="html5, mobile development, full sail" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="user-scalable=no, width=device-width" />
+        <meta name="viewport" content="target-desintydpi=device-dpi" />
+        <meta name="HandheldFriendly" content="true">
+        <meta name="MobileOptimize" content="320"/>
+<!--Page title-->
+	<title>To Do List</title>
+    </head>
+    <body>
+	<header>
+	    <h1>To Do List</h1>
+        </header>
+<!--Form data-->
+    <form action="#" method ="post">
+        <fieldset>
+	    <legend><h2>Adding a Chore:</h2></legend>
+<!--Text input-->
+                <label for="choreName">Chore Name:</label><input type="text" id="choreName" /><br/><br/>
+<!--Dropdown input-->
+                <label for="location">Location:</label>
+                    <select id="location">
+                        <option value="home">Home</option>
+                        <option value="work">Work</option>
+                        <option value="other">other</option>
+		    </select><br/>
+<!--Checkbox input-->
+                <ul>What's needed:
+                        <li><input type="checkbox" checked value="No Assistance" id="noAssistance" /><label for="noAssistance">No Assistance</label></li>
+                        <li><input type="checkbox" value="Need Tools" id="needTools" /><label for="needtools">Need Tools</label></li>
+                        <li><input type="checkbox" value="Need Materials" id="needMaterials" /><label for="needMaterials">Need Materials</label></li>
+                        <li><input type="checkbox" value="Need Help" id="needHelp" /><label for="needHelp">Need Help</label></li>
+                </ul>
+<!--Date input-->
+                <label for="dueDate">Due date:</label><input type="date" id="dueDate" /><br/><br/>
+<!--Range input-->
+                <label for="importance">Importance:</label><input type="range" id="importance" min="1" max="10" /><br/><br/>
+<!--Radio input-->
+                    Priority:<br/>
+                        <input type="radio" checked name="priority" id="low" /><label for="low"> To do this month </label><br/>
+                        <input type="radio" name="priority" id="medium" /><label for="medium"> To do this week.</label><br/>
+                        <input type="radio" name="priority" id="high" /><label for="high"> To be done today.</label><br/><br/>
+<!--Textarea input-->
+                <label for="additionalThings">Things to remember for this chore:</label><br/>
+                    <textarea id=additionalThings></textarea><br/>
+        </fieldset>
+    <br/>
+        <input type="submit" value="Submit" /><br/>				
+    </form>
+    <br/>
+        <a href = "#">Clear Entries</a><br/>
+        <a href="#">Display Entries</a>
+    </body>
+</html>
+    	
